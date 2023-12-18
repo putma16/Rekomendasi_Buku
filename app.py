@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('books_500.csv')
+df = pd.read_csv('books_list.csv')
 doc_sim_df = pd.read_csv('similarity.csv')
 
 books_list = df['Title'].values
@@ -24,7 +24,7 @@ def books_recommender(books_title, books=books_list, doc_sims=doc_sim_df):
 
    
 st.title('Sistem Rekomendasi Buku 📚')
-st.header('Menggunakan Algoritma Cosine-Similiarities',divider='blue')
+st.header('Berbasis Kemiripan Menggunakan Cosine Similiarity',divider='blue')
 
 user_input = st.text_input('Judul Buku', '', placeholder='Masukan judul buku')
 user_input = user_input.lower()
