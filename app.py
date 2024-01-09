@@ -21,7 +21,7 @@ def books_recommender(books_title, books=books_list, doc_sims=doc_sim_df):
     return similar_books
 
    
-st.title('Sistem Rekomendasi Buku 📚')
+st.title('Aplikasi Rekomendasi Buku 📚')
 st.header('Berbasis Kemiripan Menggunakan Cosine Similarity', divider='blue')
 
 user_input = st.selectbox('Pilih Judul Buku', books_list)
